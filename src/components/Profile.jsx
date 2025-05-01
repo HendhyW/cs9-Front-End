@@ -21,7 +21,7 @@ export default function ProfilePage() {
         }
 
         if (email) {
-            axios.get(`http://localhost:3000/user/${email}`)
+            axios.get(`https://cs9-back-end.vercel.app/user/${email}`)
                 .then((res) => setUser(res.data.payload))
                 .catch((err) => console.error("Error fetching user:", err));
         }

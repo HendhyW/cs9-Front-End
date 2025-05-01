@@ -45,7 +45,7 @@ export default function LoginPage() {
         }
 
         // Kirim permintaan login ke backend
-        const response = await axios.post("http://localhost:3000/user/login", null, {
+        const response = await axios.post("https://cs9-back-end.vercel.app/user/login", null, {
             params: {
             email,
             password,

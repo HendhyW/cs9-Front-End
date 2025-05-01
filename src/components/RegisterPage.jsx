@@ -109,7 +109,7 @@ export default function RegisterPage(){
                     throw new Error("Invalid password format");
                 }
                 
-                    const response = await axios.post("http://localhost:3000/user/register",null,  {
+                    const response = await axios.post("https://cs9-back-end.vercel.app/user/register",null,  {
                         params: {
                             name,
                             email,

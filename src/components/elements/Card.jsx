@@ -7,7 +7,7 @@ export default function Card() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/item");
+                const response = await axios.get("https://cs9-back-end.vercel.app/item");
                 setProducts(response.data.payload);
             } catch (error) {
                 if (error.response) {
